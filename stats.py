@@ -21,10 +21,8 @@ def sort_num(number):
 
 def sort_dict(dictionary):
     char_list = []
-    for i in dictionary:
-        key = i
-        if key in dictionary.items():
-            a = item
-            b = key
-            pass
-    pass
+    for char, num in dictionary.items():
+        charnum_list = {"char": char, "num": num}
+        char_list.append(charnum_list)
+    char_list.sort(reverse=True, key=sort_num)
+    return char_list
